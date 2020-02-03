@@ -15,4 +15,4 @@ update [TU.IDS.OperationsDB_devt].[dbo].aspnet_Membership set
   where userid=  (SELECT      [UserId]
   FROM [TU.IDS.OperationsDB_devt].[dbo].[aspnet_Users]
   where UserName ='TU-AIRSTARIDVision2UATUser2')
-  ; 
+  ; ============
