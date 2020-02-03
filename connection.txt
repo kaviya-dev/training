@@ -1,0 +1,18 @@
+E://decisioncenter//dcdatavault2.2/tu.dcdatavaultconfiguration
+
+
+Data Source=tudcdbdev1;Initial Catalog=TU.IDS.OperationsDB_Devt;Integrated Security=True 
+Data Source=tudcdbdev1;Initial Catalog=TU.IDS.TrackingDB_Devt;Integrated Security=True 
+
+idvision2_masterreport
+
+
+
+update [TU.IDS.OperationsDB_devt].[dbo].aspnet_Membership set
+  password='OGVUy6SUng/l45ZuBRoQ3W94ozo=',
+  passwordsalt='RLF7Oyo7ZNksG0a4WXDLBQ==',
+  LastPasswordChangedDate='2099-07-29 00:00:00'
+  where userid=  (SELECT      [UserId]
+  FROM [TU.IDS.OperationsDB_devt].[dbo].[aspnet_Users]
+  where UserName ='TU-AIRSTARIDVision2UATUser2')
+  ; 
